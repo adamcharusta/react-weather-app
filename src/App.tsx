@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import SearchPanelComponent from './components/SearchPanelComponent/SearchPanelComponent';
+import { Container } from '@mui/material';
+import WeatherPanelComponent from './components/WeatherPanelComponent/WeatherPanelComponent';
+import AppContext from './appContext';
+import { GeolocationType } from './types/geolocationTypes';
 
 function App() {
+  const [geolocation, setGeolocation] = useState<GeolocationType | null>(null);
+
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <AppContext.Provider value={{ geolocation, setGeolocation }}>
+        <SearchPanelComponent />
+        <WeatherPanelComponent />
+      </AppContext.Provider>
+    </Container>
   );
 }
 
