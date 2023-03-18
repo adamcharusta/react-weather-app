@@ -28,9 +28,11 @@ const WeatherPanelComponent = () => {
   const geolocationJsonWithLineBreaks = geolocationString.replace(/\n/g, '<br />');
   const weatherJsonWithLineBreaks = weatherString.replace(/\n/g, '<br />');
 
+  if (!geolocation) return <></>;
+
   return (
     <>
-      {geolocation && <CurrentWeatherCardComponent />}
+      <CurrentWeatherCardComponent />
       <Grid container>
         <Grid item>
           <div dangerouslySetInnerHTML={{ __html: geolocationJsonWithLineBreaks }} />

@@ -1,9 +1,9 @@
-interface WeatherCode {
+type WeatherCodeType = {
   code: number[];
   description: string;
-}
+};
 
-const weatherCodes: WeatherCode[] = [
+const weatherCodes: WeatherCodeType[] = [
   { code: [0], description: 'Clear sky' },
   { code: [1, 2, 3], description: 'Mainly clear, partly cloudy, and overcast' },
   { code: [45, 48], description: 'Fog and depositing rime fog' },
