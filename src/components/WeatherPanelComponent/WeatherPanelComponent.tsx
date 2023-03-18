@@ -30,7 +30,7 @@ const WeatherPanelComponent = () => {
 
   return (
     <>
-      <CurrentWeatherCardComponent />
+      {geolocation && <CurrentWeatherCardComponent />}
       <Grid container>
         <Grid item>
           <div dangerouslySetInnerHTML={{ __html: geolocationJsonWithLineBreaks }} />

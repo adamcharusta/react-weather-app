@@ -1,14 +1,26 @@
 import React, { useContext } from 'react';
 import AppContext from '../../appContext';
-import { Card, CardContent, Grid, Tooltip, Typography } from '@mui/material';
+import {
+  Box,
+  Card,
+  CardContent,
+  Grid,
+  Tooltip,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from '@mui/material';
 import moment from 'moment-timezone';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import getWeatherDescription from './getWeatherDescription';
+import AdministrationStackComponent from '../AdministrationStackComponent';
 
 const CurrentWeatherCardComponent = () => {
   const { geolocation, weather } = useContext(AppContext);
-  const dateTimeFormat = 'DD-MM-yyyy hh:mm';
-  const timeFormat = 'hh:mm';
+  const dateTimeFormat = 'DD-MM-yyyy HH:mm';
+  const timeFormat = 'HH:mm';
+  const theme = useTheme();
+  const isMediumScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <>
@@ -21,14 +33,21 @@ const CurrentWeatherCardComponent = () => {
           </Grid>
 
           <Grid container justifyContent='space-between'>
-            <Grid item>
-              <Typography variant='h2'>{geolocation?.name}</Typography>
+            <Grid item xs={12} sm={12} md={6}>
+              <Typography variant='h2'>{geolocation?.name} </Typography>
+              <AdministrationStackComponent geolocation={geolocation} />
             </Grid>
-            <Grid item>
-              <Typography variant='h2'>
-                {weather?.current_weather.temperature}
-                {weather?.hourly_units.temperature_2m}
-              </Typography>
+            <Grid item container xs={12} sm={12} md={6}>
+              <Box
+                display='flex'
+                justifyContent={isMediumScreen ? 'flex-start' : 'flex-end'}
+                width='100%'
+              >
+                <Typography variant='h2'>
+                  {weather?.current_weather.temperature}
+                  {weather?.hourly_units.temperature_2m}
+                </Typography>
+              </Box>
             </Grid>
           </Grid>
 

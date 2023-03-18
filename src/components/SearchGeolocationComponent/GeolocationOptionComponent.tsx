@@ -1,7 +1,8 @@
 import React from 'react';
 import { GeolocationType } from '../../types/geolocationTypes';
-import { Divider, ListItem, ListItemIcon, ListItemText, Stack, Typography } from '@mui/material';
+import { ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import Flag from 'react-world-flags';
+import AdministrationStackComponent from '../AdministrationStackComponent';
 
 interface SearchOptionComponentPropsTypes {
   geolocation: GeolocationType;
@@ -17,23 +18,7 @@ const GeolocationOptionComponent = ({ geolocation, params }: SearchOptionCompone
 
       <ListItemText>
         {geolocation.name}
-        <Stack direction='row' divider={<Divider orientation='vertical' flexItem />} spacing={1}>
-          {geolocation.admin3 && (
-            <Typography component='span' color='text.secondary'>
-              {geolocation.admin3}
-            </Typography>
-          )}
-          {geolocation.admin2 && (
-            <Typography component='span' color='text.secondary'>
-              {geolocation.admin2}
-            </Typography>
-          )}
-          {geolocation.admin1 && (
-            <Typography component='span' color='text.secondary'>
-              {geolocation.admin1}
-            </Typography>
-          )}
-        </Stack>
+        <AdministrationStackComponent geolocation={geolocation} />
       </ListItemText>
     </ListItem>
   );
