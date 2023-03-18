@@ -1,19 +1,12 @@
 import React from 'react';
 import { GeolocationType } from '../../types/geolocationTypes';
-import styled from 'styled-components';
-import { Divider, ListItem, ListItemIcon, ListItemText, Stack } from '@mui/material';
+import { Divider, ListItem, ListItemIcon, ListItemText, Stack, Typography } from '@mui/material';
 import Flag from 'react-world-flags';
-import COLORS from '../../colors';
 
 interface SearchOptionComponentPropsTypes {
   geolocation: GeolocationType;
   params: React.HTMLAttributes<HTMLLIElement>;
 }
-
-const AdminSpan = styled.span`
-  color: ${COLORS.SECONDARY_TEXT};
-  font-weight: bold;
-`;
 
 const GeolocationOptionComponent = ({ geolocation, params }: SearchOptionComponentPropsTypes) => {
   return (
@@ -25,9 +18,21 @@ const GeolocationOptionComponent = ({ geolocation, params }: SearchOptionCompone
       <ListItemText>
         {geolocation.name}
         <Stack direction='row' divider={<Divider orientation='vertical' flexItem />} spacing={1}>
-          {geolocation.admin3 && <AdminSpan>{geolocation.admin3}</AdminSpan>}
-          {geolocation.admin2 && <AdminSpan>{geolocation.admin2}</AdminSpan>}
-          {geolocation.admin1 && <AdminSpan>{geolocation.admin1}</AdminSpan>}
+          {geolocation.admin3 && (
+            <Typography component='span' color='text.secondary'>
+              {geolocation.admin3}
+            </Typography>
+          )}
+          {geolocation.admin2 && (
+            <Typography component='span' color='text.secondary'>
+              {geolocation.admin2}
+            </Typography>
+          )}
+          {geolocation.admin1 && (
+            <Typography component='span' color='text.secondary'>
+              {geolocation.admin1}
+            </Typography>
+          )}
         </Stack>
       </ListItemText>
     </ListItem>

@@ -16,18 +16,18 @@ export type CurrentWeatherType = {
   windspeed: number;
   winddirection: number;
   weathercode: number;
-  time: string;
+  time: Date;
 };
 
 export type HourlyUnitsType = {
-  time: string;
+  time: Date;
   temperature_2m: string;
   relativehumidity_2m: string;
   windspeed_10m: string;
 };
 
 export type HourlyType = {
-  time: string[];
+  time: Date[];
   temperature_2m: number[];
   relativehumidity_2m: number[];
   windspeed_10m: number[];

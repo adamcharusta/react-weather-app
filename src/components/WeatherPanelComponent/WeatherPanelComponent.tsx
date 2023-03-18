@@ -4,6 +4,7 @@ import { openMeteoApiInstance } from '../../apiInstances';
 import { AxiosResponse } from 'axios';
 import { WeatherType } from '../../types/weatherTypes';
 import { Grid } from '@mui/material';
+import CurrentWeatherCardComponent from './CurrentWeatherCardComponent';
 
 const WeatherPanelComponent = () => {
   const { geolocation, weather, setWeather } = useContext(AppContext);
@@ -12,7 +13,11 @@ const WeatherPanelComponent = () => {
     if (geolocation) {
       openMeteoApiInstance
         .get('', {
-          params: { latitude: geolocation?.latitude, longitude: geolocation?.longitude },
+          params: {
+            latitude: geolocation?.latitude,
+            longitude: geolocation?.longitude,
+            timezone: geolocation?.timezone,
+          },
         })
         .then(({ data }: AxiosResponse<WeatherType>) => setWeather(data));
     }
@@ -24,15 +29,18 @@ const WeatherPanelComponent = () => {
   const weatherJsonWithLineBreaks = weatherString.replace(/\n/g, '<br />');
 
   return (
-    <Grid container>
-      <Grid item>
-        <div dangerouslySetInnerHTML={{ __html: geolocationJsonWithLineBreaks }} />
-      </Grid>
+    <>
+      <CurrentWeatherCardComponent />
+      <Grid container>
+        <Grid item>
+          <div dangerouslySetInnerHTML={{ __html: geolocationJsonWithLineBreaks }} />
+        </Grid>
 
-      <Grid item>
-        <div dangerouslySetInnerHTML={{ __html: weatherJsonWithLineBreaks }} />
+        <Grid item>
+          <div dangerouslySetInnerHTML={{ __html: weatherJsonWithLineBreaks }} />
+        </Grid>
       </Grid>
-    </Grid>
+    </>
   );
 };
 
