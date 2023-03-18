@@ -3,8 +3,9 @@ import AppContext from '../../appContext';
 import { openMeteoApiInstance } from '../../apiInstances';
 import { AxiosResponse } from 'axios';
 import { WeatherType } from '../../types/weatherTypes';
-import { Grid } from '@mui/material';
 import CurrentWeatherCardComponent from './CurrentWeatherCardComponent';
+import ChartComponent from '../ChartComponent/ChartComponent';
+import { Card, CardContent, Typography } from '@mui/material';
 
 const WeatherPanelComponent = () => {
   const { geolocation, weather, setWeather } = useContext(AppContext);
@@ -23,25 +24,34 @@ const WeatherPanelComponent = () => {
     }
   }, [geolocation]);
 
-  const geolocationString = JSON.stringify(geolocation, null, 2);
-  const weatherString = weather ? JSON.stringify(weather, null, 2) : '';
-  const geolocationJsonWithLineBreaks = geolocationString.replace(/\n/g, '<br />');
-  const weatherJsonWithLineBreaks = weatherString.replace(/\n/g, '<br />');
-
-  if (!geolocation) return <></>;
+  if (!geolocation || !weather) return <></>;
 
   return (
     <>
       <CurrentWeatherCardComponent />
-      <Grid container>
-        <Grid item>
-          <div dangerouslySetInnerHTML={{ __html: geolocationJsonWithLineBreaks }} />
-        </Grid>
-
-        <Grid item>
-          <div dangerouslySetInnerHTML={{ __html: weatherJsonWithLineBreaks }} />
-        </Grid>
-      </Grid>
+      <Card sx={{ marginTop: 2 }}>
+        <CardContent>
+          <Typography variant='h4'>Weekly data</Typography>
+          <ChartComponent
+            hours={weather?.hourly.time}
+            data={weather?.hourly.temperature_2m}
+            title='Temperature'
+            unit={weather?.hourly_units.temperature_2m}
+          />
+          <ChartComponent
+            hours={weather?.hourly.time}
+            data={weather?.hourly.windspeed_10m}
+            title='Wind speed'
+            unit={weather?.hourly_units.windspeed_10m}
+          />
+          <ChartComponent
+            hours={weather?.hourly.time}
+            data={weather?.hourly.relativehumidity_2m}
+            title='Relative humidity'
+            unit={weather?.hourly_units.relativehumidity_2m}
+          />
+        </CardContent>
+      </Card>
     </>
   );
 };

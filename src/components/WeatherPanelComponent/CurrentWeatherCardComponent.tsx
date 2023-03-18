@@ -15,20 +15,20 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import getWeatherDescription from './getWeatherDescription';
 import AdministrationStackComponent from '../AdministrationStackComponent';
 import Flag from 'react-world-flags';
+import { TimeFormatEnum } from '../../types/timeFormatEnum';
 
 const CurrentWeatherCardComponent = () => {
   const { geolocation, weather } = useContext(AppContext);
-  const dateTimeFormat = 'DD-MM-yyyy HH:mm';
-  const timeFormat = 'HH:mm';
+
   const theme = useTheme();
   const isMediumScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
-    <Card>
+    <Card sx={{ marginTop: 2 }}>
       <CardContent>
         <Grid item>
           <Typography color='text.secondary' gutterBottom>
-            {moment().format(dateTimeFormat)}
+            {moment().format(TimeFormatEnum.DATE_TIME)}
           </Typography>
         </Grid>
 
@@ -59,7 +59,7 @@ const CurrentWeatherCardComponent = () => {
             <Typography variant='h6'>
               <Tooltip title='Time of last measurement' arrow disableInteractive placement='bottom'>
                 <span>
-                  Time: {moment(weather?.current_weather.time).format(timeFormat)}{' '}
+                  Time: {moment(weather?.current_weather.time).format(TimeFormatEnum.TIME)}{' '}
                   {weather?.timezone_abbreviation}
                 </span>
               </Tooltip>
@@ -71,7 +71,7 @@ const CurrentWeatherCardComponent = () => {
               Local time:{' '}
               {moment()
                 .tz(geolocation?.timezone as string)
-                ?.format(timeFormat)}
+                ?.format(TimeFormatEnum.TIME)}
             </Typography>
           </Grid>
 
