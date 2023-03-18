@@ -3,10 +3,10 @@ import { Autocomplete, CircularProgress, TextField } from '@mui/material';
 import { GeolocationResponseType, GeolocationType } from '../../types/geolocationTypes';
 import { geolocationApiInstance } from '../../apiInstances';
 import { AxiosResponse } from 'axios';
-import SearchOptionComponent from './SearchOptionComponent';
+import GeolocationOptionComponent from './GeolocationOptionComponent';
 import AppContext from '../../appContext';
 
-const SearchPanelComponent: React.FC = (): React.ReactElement => {
+const SearchGeolocationComponent = () => {
   const { geolocation, setGeolocation } = useContext(AppContext);
   const [options, setOptions] = useState<GeolocationType[]>([]);
   const [loading, setLoading] = useState(false);
@@ -60,10 +60,10 @@ const SearchPanelComponent: React.FC = (): React.ReactElement => {
         />
       )}
       renderOption={(params, option) => (
-        <SearchOptionComponent key={option.id} params={params} geolocation={option} />
+        <GeolocationOptionComponent key={option.id} params={params} geolocation={option} />
       )}
     />
   );
 };
 
-export default SearchPanelComponent;
+export default SearchGeolocationComponent;

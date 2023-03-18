@@ -15,7 +15,7 @@ const AdminSpan = styled.span`
   font-weight: bold;
 `;
 
-const SearchOptionComponent = ({ geolocation, params }: SearchOptionComponentPropsTypes) => {
+const GeolocationOptionComponent = ({ geolocation, params }: SearchOptionComponentPropsTypes) => {
   return (
     <ListItem {...params}>
       <ListItemIcon>
@@ -34,4 +34,4 @@ const SearchOptionComponent = ({ geolocation, params }: SearchOptionComponentPro
   );
 };
 
-export default SearchOptionComponent;
+export default GeolocationOptionComponent;
