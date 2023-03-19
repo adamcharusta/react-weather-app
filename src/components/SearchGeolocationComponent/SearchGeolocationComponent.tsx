@@ -17,9 +17,7 @@ const SearchGeolocationComponent = () => {
       setLoading(false),
     );
 
-    if (location?.results) {
-      setOptions(location.results);
-    }
+    if (location?.results) setOptions(location.results);
   };
 
   const handleAutocompleteChange = (

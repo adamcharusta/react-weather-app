@@ -24,9 +24,7 @@ const getWeatherDescription = (code: number | undefined): string => {
 
   const weather = weatherCodes.find((w) => w.code.find((c) => c === code) !== undefined);
 
-  if (weather?.description) return weather?.description;
-
-  return '';
+  return weather?.description ? weather?.description : '';
 };
 
 export default getWeatherDescription;

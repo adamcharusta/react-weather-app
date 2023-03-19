@@ -1,5 +1,5 @@
 import React from 'react';
-import { a11yProps, chartComponentHelpers } from './chartComponentHelpers';
+import { a11yProps, chunk } from './chartComponentHelpers';
 import moment from 'moment-timezone';
 import { TimeFormatEnum } from '../../types/timeFormatEnum';
 import { TabPanelDataType } from './chartComponentTypes';
@@ -25,8 +25,8 @@ type ChartComponentPropTypes = {
 const ChartComponent = ({ hours, data, title, unit }: ChartComponentPropTypes) => {
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
-  const dailyHours = chartComponentHelpers(hours, 24);
-  const dailyData = chartComponentHelpers(data, 24);
+  const dailyHours = chunk(hours, 24);
+  const dailyData = chunk(data, 24);
 
   const chartData = dailyHours.map((hours, i) => {
     const res: TabPanelDataType = {

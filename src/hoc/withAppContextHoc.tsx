@@ -15,12 +15,11 @@ const withAppContextHoc = (Component: React.ComponentType<any>) => {
     const [weather, setWeather] = useState<WeatherType | null>(null);
 
     useEffect(() => {
+      //Set default location
       ipApiInstance.get('').then(async ({ data }: AxiosResponse<IpResponseType>) => {
         const location = await fetchGeolocationData(data.city);
 
-        if (location?.results) {
-          setGeolocation(location.results[0]);
-        }
+        if (location?.results) setGeolocation(location.results[0]);
       });
     }, []);
 

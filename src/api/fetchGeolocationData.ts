@@ -9,9 +9,7 @@ const fetchGeolocationData = async (name: string): Promise<GeolocationResponseTy
       },
     });
 
-    if (data) return data;
-
-    return null;
+    return data ? data : null;
   } catch (error) {
     console.error(error);
     return null;
