@@ -54,7 +54,14 @@ const ChartComponent = ({ hours, data, title, unit }: ChartComponentPropTypes) =
         <Typography variant='h6'>{title}</Typography>
         <Box sx={{ width: '100%' }}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <Tabs value={value} onChange={handleChange} aria-label='basic tabs example'>
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              aria-label='week days'
+              variant='scrollable'
+              scrollButtons='auto'
+              allowScrollButtonsMobile
+            >
               {chartData.map((chart, index) => (
                 <Tab key={index} label={chart.label} {...a11yProps(index)} />
               ))}
