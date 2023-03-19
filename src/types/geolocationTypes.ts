@@ -18,7 +18,7 @@ export type GeolocationType = {
   admin2?: string;
   admin3?: string;
   admin4?: string;
-  postcodes: string[];
+  postcodes?: string[];
 };
 
 export type GeolocationResponseType = {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Divider, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
-import { GeolocationType } from '../types/geolocationTypes';
+import { GeolocationType } from '../../types/geolocationTypes';
 
 type AdministrationStackComponentPropTypes = {
   geolocation: GeolocationType | null;

@@ -1,0 +1,1571 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+      >
+        <div
+          class="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon css-1b70206-MuiAutocomplete-root"
+          data-testid="autocomplete"
+        >
+          <div
+            class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+            data-testid="textField"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="true"
+              for="geolocation-search"
+              id="geolocation-search-label"
+            >
+              Location
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded="false"
+                aria-invalid="false"
+                autocapitalize="none"
+                autocomplete="off"
+                class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-nxo287-MuiInputBase-input-MuiOutlinedInput-input"
+                id="geolocation-search"
+                role="combobox"
+                spellcheck="false"
+                type="text"
+                value="White House"
+              />
+              <div
+                class="MuiAutocomplete-endAdornment css-1q60rmi-MuiAutocomplete-endAdornment"
+              >
+                <button
+                  aria-label="Clear"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-clearIndicator css-1glvl0p-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator"
+                  tabindex="-1"
+                  title="Clear"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ptiqhd-MuiSvgIcon-root"
+                    data-testid="CloseIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+                <button
+                  aria-label="Open"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-qzbt6i-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+                  tabindex="-1"
+                  title="Open"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="ArrowDropDownIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 10l5 5 5-5z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-14lo706"
+                >
+                  <span>
+                    Location
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-wmn96w-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-1ydyjjr-MuiTypography-root"
+          >
+            01-01-1970 01:00
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-container css-1xzqqmo-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h2 css-1sra7t5-MuiTypography-root"
+            >
+              <img
+                src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'%3e%3cpath transform='scale(-1 1)' style='fill:%23c1272d;fill-opacity:1;stroke:none' d='M-900 0H0v600h-900z'/%3e%3cpath d='m450 224.315-44.467 136.87 116.401-84.559h-143.87l116.403 84.559z' style='fill:none;stroke:%23006233;stroke-width:14.62993431;stroke-miterlimit:4;stroke-dasharray:none'/%3e%3c/svg%3e"
+                style="width: 70px;"
+              />
+              White House 
+            </h2>
+            <div
+              class="MuiStack-root css-w4z10b-MuiStack-root"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-body1 css-1pnmrwp-MuiTypography-root"
+              >
+                Casablanca
+              </span>
+              <hr
+                class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-1tk1bks-MuiDivider-root"
+              />
+              <span
+                class="MuiTypography-root MuiTypography-body1 css-1pnmrwp-MuiTypography-root"
+              >
+                Casablanca-Settat
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6 css-18kb45e-MuiGrid-root"
+          >
+            <div
+              class="MuiBox-root css-asvefe"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h2 css-1sra7t5-MuiTypography-root"
+              >
+                16.2°C
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              <span
+                aria-label="Time of last measurement"
+                class=""
+                data-mui-internal-clone-element="true"
+              >
+                Time: 19:00 +00 
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-colorInfo MuiSvgIcon-fontSizeMedium css-m5zvh1-MuiSvgIcon-root"
+                  data-testid="InfoOutlinedIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  />
+                </svg>
+              </span>
+            </h6>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              Local time: 00:00
+            </h6>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              Wind speed: 9.3 km/h
+            </h6>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6 css-18kb45e-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                Wind direction: 16
+              </h6>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wlw7z0-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              <span
+                aria-label="WMO Weather interpretation code: 1"
+                class=""
+                data-mui-internal-clone-element="true"
+              >
+                Weather: Mainly clear, partly cloudy, and overcast 
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-colorInfo MuiSvgIcon-fontSizeMedium css-m5zvh1-MuiSvgIcon-root"
+                  data-testid="InfoOutlinedIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  />
+                </svg>
+              </span>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-wmn96w-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+      >
+        <h4
+          class="MuiTypography-root MuiTypography-h4 css-5lbw0b-MuiTypography-root"
+        >
+          Weekly data
+        </h4>
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-wmn96w-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              Temperature
+            </h6>
+            <div
+              class="MuiBox-root css-8atqhb"
+            >
+              <div
+                class="MuiBox-root css-1gsv261"
+              >
+                <div
+                  class="MuiTabs-root css-tkn350-MuiTabs-root"
+                >
+                  <div
+                    class="MuiTabs-scrollableX MuiTabs-hideScrollbar css-agdkjh-MuiTabs-scrollbarSize"
+                    style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"
+                  />
+                  <div
+                    class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX css-69z67c-MuiTabs-scroller"
+                    style="margin-bottom: 0px;"
+                  >
+                    <div
+                      aria-label="week days"
+                      class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
+                      role="tablist"
+                    >
+                      <button
+                        aria-controls="simple-tabpanel-0"
+                        aria-selected="true"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-0"
+                        role="tab"
+                        tabindex="0"
+                        type="button"
+                      >
+                        19-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-1"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-1"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        20-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-2"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-2"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        21-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-3"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-3"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        22-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-4"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-4"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        23-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-5"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-5"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        24-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-6"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-6"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        25-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <span
+                      class="MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
+                      style="left: 0px; width: 0px;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-labelledby="simple-tab-0"
+                id="chart-tabpanel-0"
+                role="tabpanel"
+              >
+                <div
+                  class="MuiBox-root css-0"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+                  />
+                  <div
+                    class="recharts-responsive-container"
+                    style="width: 100%; height: 250px; min-width: 0;"
+                  />
+                  <p />
+                </div>
+              </div>
+              <div
+                aria-labelledby="simple-tab-1"
+                hidden=""
+                id="chart-tabpanel-1"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-2"
+                hidden=""
+                id="chart-tabpanel-2"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-3"
+                hidden=""
+                id="chart-tabpanel-3"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-4"
+                hidden=""
+                id="chart-tabpanel-4"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-5"
+                hidden=""
+                id="chart-tabpanel-5"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-6"
+                hidden=""
+                id="chart-tabpanel-6"
+                role="tabpanel"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-wmn96w-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              Wind speed
+            </h6>
+            <div
+              class="MuiBox-root css-8atqhb"
+            >
+              <div
+                class="MuiBox-root css-1gsv261"
+              >
+                <div
+                  class="MuiTabs-root css-tkn350-MuiTabs-root"
+                >
+                  <div
+                    class="MuiTabs-scrollableX MuiTabs-hideScrollbar css-agdkjh-MuiTabs-scrollbarSize"
+                    style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"
+                  />
+                  <div
+                    class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX css-69z67c-MuiTabs-scroller"
+                    style="margin-bottom: 0px;"
+                  >
+                    <div
+                      aria-label="week days"
+                      class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
+                      role="tablist"
+                    >
+                      <button
+                        aria-controls="simple-tabpanel-0"
+                        aria-selected="true"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-0"
+                        role="tab"
+                        tabindex="0"
+                        type="button"
+                      >
+                        19-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-1"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-1"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        20-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-2"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-2"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        21-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-3"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-3"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        22-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-4"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-4"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        23-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-5"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-5"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        24-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-6"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-6"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        25-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <span
+                      class="MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
+                      style="left: 0px; width: 0px;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-labelledby="simple-tab-0"
+                id="chart-tabpanel-0"
+                role="tabpanel"
+              >
+                <div
+                  class="MuiBox-root css-0"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+                  />
+                  <div
+                    class="recharts-responsive-container"
+                    style="width: 100%; height: 250px; min-width: 0;"
+                  />
+                  <p />
+                </div>
+              </div>
+              <div
+                aria-labelledby="simple-tab-1"
+                hidden=""
+                id="chart-tabpanel-1"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-2"
+                hidden=""
+                id="chart-tabpanel-2"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-3"
+                hidden=""
+                id="chart-tabpanel-3"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-4"
+                hidden=""
+                id="chart-tabpanel-4"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-5"
+                hidden=""
+                id="chart-tabpanel-5"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-6"
+                hidden=""
+                id="chart-tabpanel-6"
+                role="tabpanel"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-wmn96w-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              Relative humidity
+            </h6>
+            <div
+              class="MuiBox-root css-8atqhb"
+            >
+              <div
+                class="MuiBox-root css-1gsv261"
+              >
+                <div
+                  class="MuiTabs-root css-tkn350-MuiTabs-root"
+                >
+                  <div
+                    class="MuiTabs-scrollableX MuiTabs-hideScrollbar css-agdkjh-MuiTabs-scrollbarSize"
+                    style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"
+                  />
+                  <div
+                    class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX css-69z67c-MuiTabs-scroller"
+                    style="margin-bottom: 0px;"
+                  >
+                    <div
+                      aria-label="week days"
+                      class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
+                      role="tablist"
+                    >
+                      <button
+                        aria-controls="simple-tabpanel-0"
+                        aria-selected="true"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-0"
+                        role="tab"
+                        tabindex="0"
+                        type="button"
+                      >
+                        19-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-1"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-1"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        20-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-2"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-2"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        21-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-3"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-3"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        22-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-4"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-4"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        23-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-5"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-5"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        24-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-6"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-6"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        25-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <span
+                      class="MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
+                      style="left: 0px; width: 0px;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-labelledby="simple-tab-0"
+                id="chart-tabpanel-0"
+                role="tabpanel"
+              >
+                <div
+                  class="MuiBox-root css-0"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+                  />
+                  <div
+                    class="recharts-responsive-container"
+                    style="width: 100%; height: 250px; min-width: 0;"
+                  />
+                  <p />
+                </div>
+              </div>
+              <div
+                aria-labelledby="simple-tab-1"
+                hidden=""
+                id="chart-tabpanel-1"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-2"
+                hidden=""
+                id="chart-tabpanel-2"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-3"
+                hidden=""
+                id="chart-tabpanel-3"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-4"
+                hidden=""
+                id="chart-tabpanel-4"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-5"
+                hidden=""
+                id="chart-tabpanel-5"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-6"
+                hidden=""
+                id="chart-tabpanel-6"
+                role="tabpanel"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-wmn96w-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              Rain
+            </h6>
+            <div
+              class="MuiBox-root css-8atqhb"
+            >
+              <div
+                class="MuiBox-root css-1gsv261"
+              >
+                <div
+                  class="MuiTabs-root css-tkn350-MuiTabs-root"
+                >
+                  <div
+                    class="MuiTabs-scrollableX MuiTabs-hideScrollbar css-agdkjh-MuiTabs-scrollbarSize"
+                    style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"
+                  />
+                  <div
+                    class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX css-69z67c-MuiTabs-scroller"
+                    style="margin-bottom: 0px;"
+                  >
+                    <div
+                      aria-label="week days"
+                      class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
+                      role="tablist"
+                    >
+                      <button
+                        aria-controls="simple-tabpanel-0"
+                        aria-selected="true"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-0"
+                        role="tab"
+                        tabindex="0"
+                        type="button"
+                      >
+                        19-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-1"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-1"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        20-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-2"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-2"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        21-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-3"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-3"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        22-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-4"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-4"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        23-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-5"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-5"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        24-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-6"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-6"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        25-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <span
+                      class="MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
+                      style="left: 0px; width: 0px;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-labelledby="simple-tab-0"
+                id="chart-tabpanel-0"
+                role="tabpanel"
+              >
+                <div
+                  class="MuiBox-root css-0"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+                  />
+                  <div
+                    class="recharts-responsive-container"
+                    style="width: 100%; height: 250px; min-width: 0;"
+                  />
+                  <p />
+                </div>
+              </div>
+              <div
+                aria-labelledby="simple-tab-1"
+                hidden=""
+                id="chart-tabpanel-1"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-2"
+                hidden=""
+                id="chart-tabpanel-2"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-3"
+                hidden=""
+                id="chart-tabpanel-3"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-4"
+                hidden=""
+                id="chart-tabpanel-4"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-5"
+                hidden=""
+                id="chart-tabpanel-5"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-6"
+                hidden=""
+                id="chart-tabpanel-6"
+                role="tabpanel"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-wmn96w-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              Snow fall
+            </h6>
+            <div
+              class="MuiBox-root css-8atqhb"
+            >
+              <div
+                class="MuiBox-root css-1gsv261"
+              >
+                <div
+                  class="MuiTabs-root css-tkn350-MuiTabs-root"
+                >
+                  <div
+                    class="MuiTabs-scrollableX MuiTabs-hideScrollbar css-agdkjh-MuiTabs-scrollbarSize"
+                    style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"
+                  />
+                  <div
+                    class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX css-69z67c-MuiTabs-scroller"
+                    style="margin-bottom: 0px;"
+                  >
+                    <div
+                      aria-label="week days"
+                      class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
+                      role="tablist"
+                    >
+                      <button
+                        aria-controls="simple-tabpanel-0"
+                        aria-selected="true"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-0"
+                        role="tab"
+                        tabindex="0"
+                        type="button"
+                      >
+                        19-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-1"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-1"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        20-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-2"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-2"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        21-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-3"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-3"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        22-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-4"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-4"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        23-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-5"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-5"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        24-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-6"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-6"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        25-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <span
+                      class="MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
+                      style="left: 0px; width: 0px;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-labelledby="simple-tab-0"
+                id="chart-tabpanel-0"
+                role="tabpanel"
+              >
+                <div
+                  class="MuiBox-root css-0"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+                  />
+                  <div
+                    class="recharts-responsive-container"
+                    style="width: 100%; height: 250px; min-width: 0;"
+                  />
+                  <p />
+                </div>
+              </div>
+              <div
+                aria-labelledby="simple-tab-1"
+                hidden=""
+                id="chart-tabpanel-1"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-2"
+                hidden=""
+                id="chart-tabpanel-2"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-3"
+                hidden=""
+                id="chart-tabpanel-3"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-4"
+                hidden=""
+                id="chart-tabpanel-4"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-5"
+                hidden=""
+                id="chart-tabpanel-5"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-6"
+                hidden=""
+                id="chart-tabpanel-6"
+                role="tabpanel"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-wmn96w-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+            >
+              Visibility
+            </h6>
+            <div
+              class="MuiBox-root css-8atqhb"
+            >
+              <div
+                class="MuiBox-root css-1gsv261"
+              >
+                <div
+                  class="MuiTabs-root css-tkn350-MuiTabs-root"
+                >
+                  <div
+                    class="MuiTabs-scrollableX MuiTabs-hideScrollbar css-agdkjh-MuiTabs-scrollbarSize"
+                    style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"
+                  />
+                  <div
+                    class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX css-69z67c-MuiTabs-scroller"
+                    style="margin-bottom: 0px;"
+                  >
+                    <div
+                      aria-label="week days"
+                      class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
+                      role="tablist"
+                    >
+                      <button
+                        aria-controls="simple-tabpanel-0"
+                        aria-selected="true"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-0"
+                        role="tab"
+                        tabindex="0"
+                        type="button"
+                      >
+                        19-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-1"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-1"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        20-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-2"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-2"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        21-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-3"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-3"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        22-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-4"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-4"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        23-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-5"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-5"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        24-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                      <button
+                        aria-controls="simple-tabpanel-6"
+                        aria-selected="false"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                        id="simple-tab-6"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        25-03-2023
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <span
+                      class="MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
+                      style="left: 0px; width: 0px;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-labelledby="simple-tab-0"
+                id="chart-tabpanel-0"
+                role="tabpanel"
+              >
+                <div
+                  class="MuiBox-root css-0"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+                  />
+                  <div
+                    class="recharts-responsive-container"
+                    style="width: 100%; height: 250px; min-width: 0;"
+                  />
+                  <p />
+                </div>
+              </div>
+              <div
+                aria-labelledby="simple-tab-1"
+                hidden=""
+                id="chart-tabpanel-1"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-2"
+                hidden=""
+                id="chart-tabpanel-2"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-3"
+                hidden=""
+                id="chart-tabpanel-3"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-4"
+                hidden=""
+                id="chart-tabpanel-4"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-5"
+                hidden=""
+                id="chart-tabpanel-5"
+                role="tabpanel"
+              />
+              <div
+                aria-labelledby="simple-tab-6"
+                hidden=""
+                id="chart-tabpanel-6"
+                role="tabpanel"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App snapshot no data 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+      >
+        <div
+          class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1b70206-MuiAutocomplete-root"
+          data-testid="autocomplete"
+        >
+          <div
+            class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+            data-testid="textField"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for="geolocation-search"
+              id="geolocation-search-label"
+            >
+              Location
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded="false"
+                aria-invalid="false"
+                autocapitalize="none"
+                autocomplete="off"
+                class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-nxo287-MuiInputBase-input-MuiOutlinedInput-input"
+                id="geolocation-search"
+                role="combobox"
+                spellcheck="false"
+                type="text"
+                value=""
+              />
+              <div
+                class="MuiAutocomplete-endAdornment css-1q60rmi-MuiAutocomplete-endAdornment"
+              >
+                <button
+                  aria-label="Open"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-qzbt6i-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+                  tabindex="-1"
+                  title="Open"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="ArrowDropDownIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 10l5 5 5-5z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-yjsfm1"
+                >
+                  <span>
+                    Location
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-wmn96w-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        >
+          No location selected. Select a locality for information.
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

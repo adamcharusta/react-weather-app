@@ -14,7 +14,7 @@ import moment from 'moment-timezone';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import getWeatherDescription from './getWeatherDescription';
-import AdministrationStackComponent from '../AdministrationStackComponent';
+import AdministrationStackComponent from '../AdministrationStackComponent/AdministrationStackComponent';
 import Flag from 'react-world-flags';
 import { TimeFormatEnum } from '../../types/timeFormatEnum';
 
@@ -61,7 +61,7 @@ const CurrentWeatherCardComponent = () => {
               <Tooltip title='Time of last measurement' arrow disableInteractive placement='bottom'>
                 <span>
                   Time: {moment(weather?.current_weather.time).format(TimeFormatEnum.TIME)}{' '}
-                  {weather?.timezone_abbreviation}
+                  {weather?.timezone_abbreviation}{' '}
                   <InfoOutlinedIcon
                     color='info'
                     sx={{ fontSize: theme.typography.body1.fontSize }}

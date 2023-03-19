@@ -20,7 +20,7 @@ export type CurrentWeatherType = {
 };
 
 export type HourlyUnitsType = {
-  time: Date;
+  time: string;
   temperature_2m: string;
   relativehumidity_2m: string;
   windspeed_10m: string;

@@ -3,11 +3,11 @@
 import React, { useEffect, useState } from 'react';
 import { GeolocationType } from '../types/geolocationTypes';
 import { WeatherType } from '../types/weatherTypes';
+import AppContext from '../appContext';
 import { ipApiInstance } from '../api/apiInstances';
 import { AxiosResponse } from 'axios';
 import { IpResponseType } from '../types/ipTypes';
 import fetchGeolocationData from '../api/fetchGeolocationData';
-import AppContext from '../appContext';
 
 const withAppContextHoc = (Component: React.ComponentType<any>) => {
   const WrappedComponent = (props: any) => {

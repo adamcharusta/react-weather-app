@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdministrationStackComponent snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiStack-root css-w4z10b-MuiStack-root"
+  >
+    <span
+      class="MuiTypography-root MuiTypography-body1 css-1pnmrwp-MuiTypography-root"
+    >
+      Casablanca
+    </span>
+    <hr
+      class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-1tk1bks-MuiDivider-root"
+    />
+    <span
+      class="MuiTypography-root MuiTypography-body1 css-1pnmrwp-MuiTypography-root"
+    >
+      Casablanca-Settat
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AdministrationStackComponent snapshot no data 1`] = `<DocumentFragment />`;

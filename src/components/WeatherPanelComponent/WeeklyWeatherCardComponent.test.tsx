@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { App } from './App';
-import { mockGeolocation } from './__mocks__/mockGeolocation';
-import AppContext from './appContext';
-import { mockWeather } from './__mocks__/mockWeather';
+import { mockGeolocation } from '../../__mocks__/mockGeolocation';
+import AppContext from '../../appContext';
+import { mockWeather } from '../../__mocks__/mockWeather';
+import WeeklyWeatherCardComponent from './WeeklyWeatherCardComponent';
 
-describe('App', () => {
+describe('WeeklyWeatherCardComponent', () => {
   it('snapshot', () => {
     const component = render(
       <AppContext.Provider
@@ -16,7 +16,7 @@ describe('App', () => {
           setWeather: jest.fn(),
         }}
       >
-        <App />
+        <WeeklyWeatherCardComponent />
       </AppContext.Provider>,
     );
 
@@ -33,9 +33,10 @@ describe('App', () => {
           setWeather: jest.fn(),
         }}
       >
-        <App />
+        <WeeklyWeatherCardComponent />
       </AppContext.Provider>,
     );
+
     expect(component.asFragment()).toMatchSnapshot();
   });
 });

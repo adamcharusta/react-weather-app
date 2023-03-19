@@ -34,6 +34,7 @@ const SearchGeolocationComponent = () => {
         <Autocomplete
           disablePortal
           id='geolocation-search'
+          data-testid='autocomplete'
           options={options}
           sx={{ width: '100%', marginTop: 1 }}
           loading={loading}
@@ -45,6 +46,7 @@ const SearchGeolocationComponent = () => {
             <TextField
               {...params}
               label='Location'
+              data-testid='textField'
               onChange={handleInputChange}
               InputProps={{
                 ...params.InputProps,

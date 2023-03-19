@@ -14,4 +14,6 @@ function App() {
     </Container>
   );
 }
+
+export { App };
 export default withThemeHoc(withAppContextHoc(App));

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabPanelComponent snapshot 1`] = `
+<DocumentFragment>
+  <div
+    aria-labelledby="simple-tab-0"
+    id="chart-tabpanel-0"
+    role="tabpanel"
+  >
+    <div
+      class="MuiBox-root css-0"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+      >
+        Hello There!
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
