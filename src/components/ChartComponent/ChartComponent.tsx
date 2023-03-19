@@ -3,7 +3,7 @@ import { a11yProps, chartComponentHelpers } from './chartComponentHelpers';
 import moment from 'moment-timezone';
 import { TimeFormatEnum } from '../../types/timeFormatEnum';
 import { TabPanelDataType } from './chartComponentTypes';
-import { Box, Card, CardContent, Tab, Tabs, Typography } from '@mui/material';
+import { Box, Card, CardContent, Tab, Tabs, Typography, useTheme } from '@mui/material';
 import TabPanelComponent from './TabPanelComponent';
 import {
   CartesianGrid,
@@ -18,12 +18,12 @@ import {
 type ChartComponentPropTypes = {
   hours: Date[];
   data: number[];
-  stroke?: string;
   title: string;
   unit: string;
 };
 
-const ChartComponent = ({ hours, data, title, stroke, unit }: ChartComponentPropTypes) => {
+const ChartComponent = ({ hours, data, title, unit }: ChartComponentPropTypes) => {
+  const theme = useTheme();
   const [value, setValue] = React.useState(0);
   const dailyHours = chartComponentHelpers(hours, 24);
   const dailyData = chartComponentHelpers(data, 24);
@@ -66,13 +66,19 @@ const ChartComponent = ({ hours, data, title, stroke, unit }: ChartComponentProp
               <ResponsiveContainer height={250} width='100%'>
                 <LineChart data={chart.data} margin={{ right: 25, top: 10 }}>
                   <CartesianGrid strokeDasharray='3 3' />
-                  <XAxis dataKey='name' />
-                  <YAxis />
-                  <Tooltip formatter={(value) => `${value}${unit}`} />
+                  <XAxis dataKey='name' stroke={theme.palette.text.primary} />
+                  <YAxis stroke={theme.palette.text.primary} />
+                  <Tooltip
+                    formatter={(value) => `${value}${unit}`}
+                    contentStyle={{
+                      backgroundColor: theme.palette.background.default,
+                      fontWeight: 'bold',
+                    }}
+                  />
                   <Line
                     type='monotone'
                     dataKey='value'
-                    stroke={stroke ? stroke : '#8884d8'}
+                    stroke={theme.palette.text.secondary}
                     activeDot={{ r: 8 }}
                   />
                 </LineChart>

@@ -6,6 +6,7 @@ import WeatherPanelComponent from './components/WeatherPanelComponent/WeatherPan
 import AppContext from './appContext';
 import { GeolocationType } from './types/geolocationTypes';
 import { WeatherType } from './types/weatherTypes';
+import withThemeHoc from './hoc/withThemeHoc';
 
 function App() {
   const [geolocation, setGeolocation] = useState<GeolocationType | null>(null);
@@ -20,5 +21,4 @@ function App() {
     </Container>
   );
 }
-
-export default App;
+export default withThemeHoc(App);

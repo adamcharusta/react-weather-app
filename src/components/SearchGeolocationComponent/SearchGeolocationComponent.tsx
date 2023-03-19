@@ -39,7 +39,7 @@ const SearchGeolocationComponent = () => {
           disablePortal
           id='geolocation-search'
           options={options}
-          sx={{ width: '100%', marginTop: 1, backgroundColor: '#fff' }}
+          sx={{ width: '100%', marginTop: 1 }}
           loading={loading}
           value={geolocation}
           getOptionLabel={(option) => option.name}

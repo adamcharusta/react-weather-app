@@ -12,7 +12,7 @@ const TabPanelComponent = ({ children, value, index, ...other }: TabPanelCompone
     <div
       role='tabpanel'
       hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
+      id={`chart-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
