@@ -7,7 +7,7 @@ export const openMeteoApiInstance = axios.create({
   baseURL: process.env.REACT_APP_OPEN_METEO_API_URL,
   params: {
     current_weather: true,
-    hourly: 'temperature_2m,relativehumidity_2m,windspeed_10m',
+    hourly: 'temperature_2m,relativehumidity_2m,windspeed_10m,rain,snowfall,visibility',
   },
 });
 export const ipApiInstance = axios.create({

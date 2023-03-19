@@ -24,6 +24,9 @@ export type HourlyUnitsType = {
   temperature_2m: string;
   relativehumidity_2m: string;
   windspeed_10m: string;
+  rain: string;
+  snowfall: string;
+  visibility: string;
 };
 
 export type HourlyType = {
@@ -31,4 +34,7 @@ export type HourlyType = {
   temperature_2m: number[];
   relativehumidity_2m: number[];
   windspeed_10m: number[];
+  rain: number[];
+  snowfall: number[];
+  visibility: number[];
 };

@@ -50,6 +50,24 @@ const WeatherPanelComponent = () => {
             title='Relative humidity'
             unit={weather?.hourly_units.relativehumidity_2m}
           />
+          <ChartComponent
+            hours={weather?.hourly.time}
+            data={weather?.hourly.rain}
+            title='Rain'
+            unit={weather?.hourly_units.rain}
+          />
+          <ChartComponent
+            hours={weather?.hourly.time}
+            data={weather?.hourly.snowfall}
+            title='Snow fall'
+            unit={weather?.hourly_units.snowfall}
+          />
+          <ChartComponent
+            hours={weather?.hourly.time}
+            data={weather?.hourly.visibility}
+            title='Visibility'
+            unit={weather?.hourly_units.visibility}
+          />
         </CardContent>
       </Card>
     </>
