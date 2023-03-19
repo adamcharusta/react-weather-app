@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import AppContext from '../../appContext';
-import { openMeteoApiInstance } from '../../apiInstances';
+import { openMeteoApiInstance } from '../../api/apiInstances';
 import { AxiosResponse } from 'axios';
 import { WeatherType } from '../../types/weatherTypes';
 import CurrentWeatherCardComponent from './CurrentWeatherCardComponent';

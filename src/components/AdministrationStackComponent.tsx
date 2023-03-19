@@ -18,6 +18,11 @@ const AdministrationStackComponent = ({ geolocation }: AdministrationStackCompon
       divider={<Divider orientation='vertical' flexItem />}
       spacing={1}
     >
+      {geolocation?.admin4 && (
+        <Typography component='span' color='text.secondary'>
+          {geolocation.admin4}
+        </Typography>
+      )}
       {geolocation?.admin3 && (
         <Typography component='span' color='text.secondary'>
           {geolocation.admin3}

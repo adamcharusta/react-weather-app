@@ -1,27 +1,25 @@
 import React, { ChangeEvent, useContext, useState } from 'react';
 import { Autocomplete, Card, CardContent, CircularProgress, TextField } from '@mui/material';
-import { GeolocationResponseType, GeolocationType } from '../../types/geolocationTypes';
-import { geolocationApiInstance } from '../../apiInstances';
-import { AxiosResponse } from 'axios';
+import { GeolocationType } from '../../types/geolocationTypes';
 import GeolocationOptionComponent from './GeolocationOptionComponent';
 import AppContext from '../../appContext';
+import fetchGeolocationData from '../../api/fetchGeolocationData';
 
 const SearchGeolocationComponent = () => {
   const { geolocation, setGeolocation } = useContext(AppContext);
   const [options, setOptions] = useState<GeolocationType[]>([]);
   const [loading, setLoading] = useState(false);
 
-  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = async (event: ChangeEvent<HTMLInputElement>) => {
     setLoading(true);
 
-    geolocationApiInstance
-      .get('', { params: { name: event.target.value } })
-      .then((res: AxiosResponse<GeolocationResponseType>) => {
-        if (res.data.results) {
-          setOptions(res.data.results);
-        }
-      })
-      .finally(() => setLoading(false));
+    const location = await fetchGeolocationData(event.target.value).finally(() =>
+      setLoading(false),
+    );
+
+    if (location?.results) {
+      setOptions(location.results);
+    }
   };
 
   const handleAutocompleteChange = (

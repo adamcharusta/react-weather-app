@@ -1,24 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import SearchGeolocationComponent from './components/SearchGeolocationComponent/SearchGeolocationComponent';
 import { Container } from '@mui/material';
 import WeatherPanelComponent from './components/WeatherPanelComponent/WeatherPanelComponent';
-import AppContext from './appContext';
-import { GeolocationType } from './types/geolocationTypes';
-import { WeatherType } from './types/weatherTypes';
 import withThemeHoc from './hoc/withThemeHoc';
+import withAppContextHoc from './hoc/withAppContextHoc';
 
 function App() {
-  const [geolocation, setGeolocation] = useState<GeolocationType | null>(null);
-  const [weather, setWeather] = useState<WeatherType | null>(null);
-
   return (
     <Container>
-      <AppContext.Provider value={{ geolocation, setGeolocation, weather, setWeather }}>
-        <SearchGeolocationComponent />
-        <WeatherPanelComponent />
-      </AppContext.Provider>
+      <SearchGeolocationComponent />
+      <WeatherPanelComponent />
     </Container>
   );
 }
-export default withThemeHoc(App);
+export default withThemeHoc(withAppContextHoc(App));
