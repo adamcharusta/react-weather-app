@@ -12,6 +12,7 @@ import {
 } from '@mui/material';
 import moment from 'moment-timezone';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import getWeatherDescription from './getWeatherDescription';
 import AdministrationStackComponent from '../AdministrationStackComponent';
 import Flag from 'react-world-flags';
@@ -61,6 +62,10 @@ const CurrentWeatherCardComponent = () => {
                 <span>
                   Time: {moment(weather?.current_weather.time).format(TimeFormatEnum.TIME)}{' '}
                   {weather?.timezone_abbreviation}
+                  <InfoOutlinedIcon
+                    color='info'
+                    sx={{ fontSize: theme.typography.body1.fontSize }}
+                  />
                 </span>
               </Tooltip>
             </Typography>
@@ -102,7 +107,13 @@ const CurrentWeatherCardComponent = () => {
                 disableInteractive
                 placement='bottom'
               >
-                <span>Weather: {getWeatherDescription(weather?.current_weather.weathercode)}</span>
+                <span>
+                  Weather: {getWeatherDescription(weather?.current_weather.weathercode)}{' '}
+                  <InfoOutlinedIcon
+                    color='info'
+                    sx={{ fontSize: theme.typography.body1.fontSize }}
+                  />
+                </span>
               </Tooltip>
             </Typography>
           </Grid>
