@@ -16,7 +16,7 @@ const CurrentWeatherCardComponent = () => {
 
   return (
     <Card sx={{ marginTop: 2 }}>
-      <CardContent sx={{ paddingLeft: 1, paddingRight: 1 }}>
+      <CardContent>
         <Grid item>
           <Typography color='text.secondary' gutterBottom>
             {moment().format(TimeFormatEnum.DATE_TIME)}
