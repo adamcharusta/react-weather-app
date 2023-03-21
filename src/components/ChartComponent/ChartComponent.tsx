@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useId } from 'react';
 import { a11yProps, chunk } from './chartComponentHelpers';
 import moment from 'moment-timezone';
 import { TimeFormatEnum } from '../../types/timeFormatEnum';
 import { TabPanelDataType } from './chartComponentTypes';
-import { Box, Card, CardContent, Tab, Tabs, Typography, useTheme } from '@mui/material';
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Box,
+  Tab,
+  Tabs,
+  Typography,
+  useTheme,
+} from '@mui/material';
 import TabPanelComponent from './TabPanelComponent';
 import {
   CartesianGrid,
@@ -14,19 +23,31 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 type ChartComponentPropTypes = {
   hours: Date[];
   data: number[];
-  title: string;
   unit: string;
+  expanded: boolean;
+  setExpanded: () => void;
+  title: string;
 };
 
-const ChartComponent = ({ hours, data, title, unit }: ChartComponentPropTypes) => {
+const ChartComponent = ({
+  hours,
+  data,
+  unit,
+  setExpanded,
+  expanded,
+  title,
+}: ChartComponentPropTypes) => {
+  const id = useId();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
   const dailyHours = chunk(hours, 24);
   const dailyData = chunk(data, 24);
+  const ariaTitle = title.replace(' ', '-').toLowerCase();
 
   const chartData = dailyHours.map((hours, i) => {
     const res: TabPanelDataType = {
@@ -49,15 +70,21 @@ const ChartComponent = ({ hours, data, title, unit }: ChartComponentPropTypes) =
   };
 
   return (
-    <Card sx={{ marginTop: 2 }}>
-      <CardContent>
+    <Accordion expanded={expanded} onChange={setExpanded}>
+      <AccordionSummary
+        aria-controls={`${ariaTitle}-content`}
+        id={id}
+        expandIcon={<ExpandMoreIcon />}
+      >
         <Typography variant='h6'>{title}</Typography>
+      </AccordionSummary>
+      <AccordionDetails sx={{ paddingLeft: 0, paddingRight: 0 }}>
         <Box sx={{ width: '100%' }}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs
               value={value}
               onChange={handleChange}
-              aria-label='week days'
+              aria-label={`${ariaTitle}-tab`}
               variant='scrollable'
               scrollButtons='auto'
               allowScrollButtonsMobile
@@ -93,8 +120,8 @@ const ChartComponent = ({ hours, data, title, unit }: ChartComponentPropTypes) =
             </TabPanelComponent>
           ))}
         </Box>
-      </CardContent>
-    </Card>
+      </AccordionDetails>
+    </Accordion>
   );
 };
 
