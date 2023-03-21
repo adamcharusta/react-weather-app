@@ -6,7 +6,7 @@ exports[`WeatherPanelComponent snapshot data 1`] = `
     class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-wmn96w-MuiPaper-root-MuiCard-root"
   >
     <div
-      class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+      class="MuiCardContent-root css-h75ccu-MuiCardContent-root"
     >
       <div
         class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
@@ -21,7 +21,7 @@ exports[`WeatherPanelComponent snapshot data 1`] = `
         class="MuiGrid-root MuiGrid-container css-1xzqqmo-MuiGrid-root"
       >
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
         >
           <h2
             class="MuiTypography-root MuiTypography-h2 css-1sra7t5-MuiTypography-root"
@@ -30,7 +30,7 @@ exports[`WeatherPanelComponent snapshot data 1`] = `
               src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'%3e%3cpath transform='scale(-1 1)' style='fill:%23c1272d;fill-opacity:1;stroke:none' d='M-900 0H0v600h-900z'/%3e%3cpath d='m450 224.315-44.467 136.87 116.401-84.559h-143.87l116.403 84.559z' style='fill:none;stroke:%23006233;stroke-width:14.62993431;stroke-miterlimit:4;stroke-dasharray:none'/%3e%3c/svg%3e"
               style="width: 70px;"
             />
-            White House 
+             White House 
           </h2>
           <div
             class="MuiStack-root css-w4z10b-MuiStack-root"
@@ -51,16 +51,16 @@ exports[`WeatherPanelComponent snapshot data 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6 css-18kb45e-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 css-spompt-MuiGrid-root"
         >
           <div
-            class="MuiBox-root css-asvefe"
+            class="MuiBox-root css-hboir5"
           >
-            <h2
-              class="MuiTypography-root MuiTypography-h2 css-1sra7t5-MuiTypography-root"
+            <h1
+              class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
             >
               16.2°C
-            </h2>
+            </h1>
           </div>
         </div>
       </div>
@@ -172,7 +172,7 @@ exports[`WeatherPanelComponent snapshot data 1`] = `
     class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-wmn96w-MuiPaper-root-MuiCard-root"
   >
     <div
-      class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+      class="MuiCardContent-root css-h75ccu-MuiCardContent-root"
     >
       <h5
         class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"

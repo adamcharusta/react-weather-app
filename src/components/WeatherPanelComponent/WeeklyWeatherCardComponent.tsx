@@ -22,7 +22,7 @@ const WeeklyWeatherCardComponent = () => {
 
   return (
     <Card sx={{ marginTop: 2 }}>
-      <CardContent>
+      <CardContent sx={{ paddingLeft: 1, paddingRight: 1 }}>
         <Typography variant='h5'>Weekly Weather</Typography>
         <ChartComponent
           hours={weather?.hourly.time}

@@ -1,15 +1,6 @@
 import React, { useContext } from 'react';
 import AppContext from '../../appContext';
-import {
-  Box,
-  Card,
-  CardContent,
-  Grid,
-  Tooltip,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from '@mui/material';
+import { Box, Card, CardContent, Grid, Tooltip, Typography, useTheme } from '@mui/material';
 import moment from 'moment-timezone';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
@@ -22,11 +13,10 @@ const CurrentWeatherCardComponent = () => {
   const { geolocation, weather } = useContext(AppContext);
 
   const theme = useTheme();
-  const isMediumScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <Card sx={{ marginTop: 2 }}>
-      <CardContent>
+      <CardContent sx={{ paddingLeft: 1, paddingRight: 1 }}>
         <Grid item>
           <Typography color='text.secondary' gutterBottom>
             {moment().format(TimeFormatEnum.DATE_TIME)}
@@ -34,20 +24,15 @@ const CurrentWeatherCardComponent = () => {
         </Grid>
 
         <Grid container justifyContent='space-between'>
-          <Grid item xs={12} sm={12} md={6}>
+          <Grid item xs={12}>
             <Typography variant='h2'>
-              <Flag code={geolocation?.country_code} style={{ width: 70 }} />
-              {geolocation?.name}{' '}
+              <Flag code={geolocation?.country_code} style={{ width: 70 }} /> {geolocation?.name}{' '}
             </Typography>
             <AdministrationStackComponent geolocation={geolocation} />
           </Grid>
-          <Grid item container xs={12} sm={12} md={6}>
-            <Box
-              display='flex'
-              justifyContent={isMediumScreen ? 'flex-start' : 'flex-end'}
-              width='100%'
-            >
-              <Typography variant='h2'>
+          <Grid item container xs={12}>
+            <Box display='flex' width='100%'>
+              <Typography variant='h1'>
                 {weather?.current_weather.temperature}
                 {weather?.hourly_units.temperature_2m}
               </Typography>

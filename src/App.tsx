@@ -8,7 +8,7 @@ import withAppContextHoc from './hoc/withAppContextHoc';
 
 function App() {
   return (
-    <Container>
+    <Container maxWidth='md'>
       <SearchGeolocationComponent />
       <WeatherPanelComponent />
     </Container>
