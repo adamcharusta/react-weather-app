@@ -6,10 +6,10 @@ exports[`WeeklyWeatherCardComponent snapshot 1`] = `
     class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-wmn96w-MuiPaper-root-MuiCard-root"
   >
     <div
-      class="MuiCardContent-root css-h75ccu-MuiCardContent-root"
+      class="MuiCardContent-root css-1cdrjmn-MuiCardContent-root"
     >
       <h5
-        class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-h5 css-1xmz7x3-MuiTypography-root"
       >
         Weekly Weather
       </h5>
